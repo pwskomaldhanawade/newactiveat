@@ -1,0 +1,147 @@
+$btn-color:$green;
+$btn-alt-color: $white;
+%button {
+  width: auto;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  border-radius: $base-border-radius;
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: capitalize;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: .7em 1.2em;
+  text-align: center;
+  text-decoration: none;
+  @include transition(all .5s ease);
+  &:hover {
+    color: white;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  &:after {
+    content: '';
+  }
+
+  @include mq(medium) {
+    font-size: 25px;
+  }
+}
+
+.btn {
+  @extend %button;
+  background-color: $btn-color;
+  text-align: center;
+  &:hover {
+    background-color: darken($btn-color, 10%);
+  }
+  &:after {
+    background-color: darken($btn-color, 10%);
+  }
+}
+
+.btn-color {
+  @extend %button;
+  background-color: $yellow;
+  color: $btn-alt-color;
+  &:hover {
+    background-color: darken($yellow, 10%);
+    color: $btn-alt-color !important;
+  }
+  &:after {
+    background-color: darken($yellow, 10%);
+    color: $btn-alt-color;
+  }
+}
+
+.btn-alt {
+  @extend %button;
+  background-color: transparent;
+  border: 1px solid $dark-gray;
+  color: $dark-gray;
+  &:hover {
+    border: 1px solid $green;
+    background-color: white;
+    color: $green;
+  }
+  &:after {
+    background-color: darken($btn-alt-color, 10%);
+  }
+}
+
+button,
+input[type="submit"] {
+  @extend .btn;
+  @include appearance(none);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  &:focus:not(:hover):not(:active) {
+    outline: 2px dashed $base-font-color;
+    outline-offset: 2px;
+  }
+}
+
+//Icon Buttons
+%btn-ico {
+  @extend %button;
+  padding-right: 4em;
+  &:after {
+    content: '';
+    display: block;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3em;
+    position: absolute;
+    background-position: center center;
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    @include transition(background 0.1s linear);
+  }
+  &:hover {
+    &:after {
+      background-size: 2em;
+    }
+  }
+}
+
+.btn-download {
+  @extend %btn-ico;
+  @extend .btn;
+  &:after {
+    background-image: url(img/ico-download.svg);
+  }
+}
+
+.btn-alt-download {
+  @extend %btn-ico;
+  @extend .btn-alt;
+  &:after {
+    background-image: url(img/ico-download.svg);
+  }
+}
+
+.btn-arrow {
+  @extend %btn-ico;
+  @extend .btn;
+  &:after {
+    background-image: url(img/ico-white-arrow-right.svg);
+  }
+}
+
+.btn-alt-arrow {
+  @extend %btn-ico;
+  @extend .btn-alt;
+  &:after {
+    background-image: url(img/ico-white-arrow-right.svg);
+  }
+}

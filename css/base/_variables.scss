@@ -1,0 +1,122 @@
+// Typography
+@font-face {
+  font-family: Geovana;
+  font-weight: normal;
+  src: url("fonts/geovana/Geovana.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geometr706 BlkCn BT';
+  src: url("fonts/geometr706-md-bt/geometric 706 medium bt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geometr706 BlkCn BT BLACK';
+  src: url("fonts/Geometr706 BlkCn BT Black.ttf") format("truetype");
+}
+
+$header-font-family: 'Geometr706 BlkCn BT';
+$base-font-family: 'Geometr706 BlkCn BT';
+
+// Font Sizes
+$small-font-size: em(14);
+$base-font-size: em(16); 
+$medium-font-size: em(21);
+$large-font-size: em(27);
+$xlarge-font-size: em(32);
+$display-font-size: em(40);
+
+// Line height
+$baseline: em(8); //Old habits die hard
+$base-line: em(8);
+$base-line-height: 1.5;
+$header-line-height: 1.25;
+
+// Other Sizes
+$base-border-radius: 0;
+$base-spacing: $base-line-height * 1em;
+$base-z-index: 0;
+
+// Colors
+$white:#fff;
+$black:#000;
+$green: #23b87b;
+$yellow: #ffad00;
+$red: #ff0000;
+$dark-gray: #3d3d3d;
+$light-gray: #ebebeb;
+
+// Base Colors
+$base-color: $dark-gray;
+$base-accent-color: $green;
+$base-font-color: $dark-gray;
+$base-background-color: $white;
+
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+
+// Border color
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(black,0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
+
+// Navigation Default/Desktop
+$nav-font-size: em(16);
+$nav-height: em(56);
+$nav-background: $base-color;
+$nav-text-color: $light-gray;
+$nav-text-color-hover: $green;
+$nav-hover: $green;
+$nav-border: 1px solid lighten($nav-background,5%);
+$nav-spacing: $baseline;
+$nav-subnav-font-size: em(16);
+$nav-subnav-height: em(50);
+$nav-subnav-background: $nav-hover;
+$nav-subnav-border: 1px solid lighten($nav-hover,10%);
+$nav-subnav-hover: darken($nav-subnav-background, 10%);
+
+// Navigation Medium/Tablet
+$nav-font-size-medium: $nav-font-size;
+$nav-height-medium: $nav-height;
+$nav-background-medium: $nav-background;
+$nav-text-color-medium: $nav-text-color;
+$nav-text-color-hover-medium: $nav-text-color-hover;
+$nav-hover-medium: $nav-hover;
+$nav-border-medium: $nav-border;
+$nav-spacing-medium: $nav-spacing;
+$nav-subnav-font-size-medium: $nav-subnav-font-size;
+$nav-subnav-height-medium: $nav-subnav-height;
+$nav-subnav-background-medium: $nav-subnav-background;
+$nav-subnav-border-medium: $nav-subnav-border;
+$nav-subnav-hover-medium: $nav-subnav-hover;
+
+// Navigation Small/Mobile
+$nav-font-size-mobile: $nav-font-size;
+$nav-height-mobile: $nav-height; 
+$nav-width-mobile: 100%;
+$nav-background-mobile: $nav-background;
+$nav-text-color-mobile: $nav-text-color;
+$nav-text-color-hover-mobile: $nav-text-color-hover;
+$nav-hover-mobile: $nav-hover;
+$nav-border-mobile: $nav-border;
+$nav-spacing-mobile: $baseline*2;
+$nav-subnav-font-size-mobile: $nav-subnav-font-size;
+$nav-subnav-height-mobile: $nav-subnav-height;
+$nav-subnav-background-mobile: $nav-subnav-background;
+$nav-subnav-border-mobile: $nav-subnav-border;
+$nav-subnav-hover-mobile: $nav-subnav-hover;
+
+// Site Intro
+$mobile-height: 32em;
+$desktop-height: 44.5em;
+$tablet-height: 40em;

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e1e1e1;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="50" height="50" rx="8" ry="8"/>
+  <image id="trash" x="11" y="8" width="28" height="34" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAiCAYAAABMfblJAAABm0lEQVRIie2XMUsDMRiGn9aKVAQXBYsWOjoKDo5dHQRxcBOhkzg4+UeE4uCiIG5OBf+Eg9BFcOhSpGhRwWoFoUMl5TPE87veSS/noC+E0Nx7z3tJLmkuQzwZXwVYB6YDd3SAGnAC9GPyIlUV2LBSjQOK08MC0BLvEXATuL4I7MiDzAN3o/auLLD2EE9bPOUoWE7qIrANzCqeBanzwEEIJy/1HrChXH8AToFb86MEPMaYo1GLySiNAfvAatRQJKBJoJuV4UxLxWyKYQOZwGaKec2MvKkrwLjnsB5w6Tnju9yd5jxkHSYhsw43g5z7kHX2rrT1pMTx9oU9kPuWvik9MXvojPxTuFqS4qoi3pbCseyc0/iqGBtmsQL1QPu14q2LtyGbuCvLdnv4okCSkmVHDWlSsuxfDex6DLRsN7DjMdCy/9Ycph747DHQsv/nMPFAd/PW1uFUoP7UxA+8X9huoLbTLAPHUruqKd5D4ErxhrEH3xC+DsEFLdDM55OHMMMMPY7uegg0TCvtc20N2ALmwp4qpsw55gy4sH7gA8lxw18vVu9iAAAAAElFTkSuQmCC"/>
+</svg>
